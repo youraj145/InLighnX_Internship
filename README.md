@@ -1,71 +1,71 @@
-# 📊 E-commerce Sales Performance Dashboard (Data Analyst Internship Project)
+# 📊 Data Analyst Internship Projects – InLighnX Global Pvt. Ltd.  
+**Duration:** July 2025 – October 2025  
+**Role:** Data Analyst Intern  
 
-## Project Overview
-This Power BI dashboard was developed during my **Data Analyst Intern program at InLighnX Global Pvt. Ltd.**, running from **July 2025 to October 2025**.  
+This repository contains the projects I developed during my **Data Analyst Internship at InLighnX Global Pvt. Ltd.** The work primarily focused on **data analysis, visualization, and predictive modeling** using **Power BI and Python**.  
 
-The goal was to transform raw transactional and customer data into an **intuitive, interactive dashboard** that allows stakeholders (e.g., Sales Managers, Marketing Teams) to:
-- Monitor key business metrics  
+---
+
+## 🚀 Internship Projects
+
+### 📌 Project 1: E-commerce Sales Performance Dashboard
+**Tech Stack:** Power BI, DAX, Data Modeling  
+
+#### 🔎 Overview
+Developed an interactive **Power BI Dashboard** to transform raw transactional and customer data into meaningful business insights. The dashboard enables Sales Managers and Marketing Teams to:  
+- Monitor key metrics  
 - Identify profitable customer segments  
 - Analyze product category performance  
 
----
+#### 🔑 Key KPIs
+- **Total Amount (Revenue)**  
+- **Total Profit**  
+- **Total Quantity Sold**  
+- **Average Order Value (AOV)**  
 
-## 🔑 Key Performance Indicators (KPIs) Monitored
-The dashboard tracks the health of the e-commerce business using the following calculated metrics:
+#### 📊 Dashboard Insights
+- **Geographic Performance** (Top states: Maharashtra, Uttar Pradesh, etc.)  
+- **Product Deep Dive** (Category & Sub-Category analysis)  
+- **Customer Behavior** (Top customers by profit & spending)  
+- **Payment Analysis** (COD vs. UPI vs. Credit Card breakdown)  
+- **Time Series Trends** (Monthly & Quarterly sales growth)  
 
-| **KPI**              | **Description**                                   | **Insight Provided**                                   |
-|-----------------------|---------------------------------------------------|-------------------------------------------------------|
-| **Total Amount**      | Total revenue generated from all orders.          | Overall sales magnitude.                              |
-| **Total Profit**      | Gross profit after subtracting costs.             | Business health and profitability trends.             |
-| **Total Quantity**    | Total number of units sold.                       | Inventory and supply chain demand.                    |
-| **Average Order Value (AOV)** | Total Amount ÷ Total Orders.                | Customer spending behavior & marketing effectiveness. |
+#### 📁 Files
+- `Ecommerce Sales Dashboard.pbix` → Power BI file  
+- `Orders.csv` → Order metadata  
+- `Details.csv` → Transactional details  
+- `Ecommerce Sales Dashboard.pdf` → Dashboard snapshot  
 
----
+#### 🖼️ Preview  
+![Dashboard Screenshot](https://github.com/youraj145/InLighnX_Internship/blob/main/IMG.png)  
 
-## 📂 Data Sources and Transformation
-
-### 1. Data Sources
-- **Orders.csv** → Contains high-level order information (Order ID, Order Date, Customer Name, State, City).  
-- **Details.csv** → Contains line-item details (Order ID, Amount, Profit, Quantity, Category, Sub-Category, Payment Mode).  
-
-### 2. Data Modeling & DAX
-- **One-to-Many Relationship** → Orders (1) ↔ Details (Many) via *Order ID*.  
-- **DAX Calculations** included:  
-  - Time Intelligence: *Year-over-Year Growth*, *Quarterly Trends*  
-  - Custom Measures: *Profit Margin*, *Average Order Value (AOV)*  
+🔗 **[View Project Folder](https://github.com/youraj145/InLighnX_Internship/tree/main/Ecommerce_Sales_Dashboard)**  
 
 ---
 
-## 📊 Dashboard Insights
+### 📌 Project 2: Customer Churn Prediction (Machine Learning)
+**Tech Stack:** Python, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Jupyter Notebook  
 
-- **Geographic Performance** → Map visualization showing sales & profit by state (e.g., Maharashtra, Uttar Pradesh as top regions).  
-- **Product Deep Dive** → Category & Sub-Category analysis (e.g., Clothing dominant, Printers high-profit, Saree low-profit).  
-- **Customer Behavior** → Top customers ranked by sales & profit contribution.  
-- **Payment Analysis** → COD vs UPI vs Credit Card sales breakdown.  
-- **Time Series Analysis** → Monthly/Quarterly sales & profit trends for forecasting.  
+#### 🔎 Overview
+Built a **Machine Learning Model** to analyze customer churn patterns and predict whether a customer is likely to leave a subscription/service. The project highlights how data-driven insights can help businesses improve **customer retention strategies**.  
 
----
+#### 🔑 Key Steps
+- **Exploratory Data Analysis (EDA):**  
+  - Checked missing values, distributions, and correlations  
+  - Visualized churn rates across demographics & service usage  
+- **Feature Engineering:**  
+  - Encoded categorical variables  
+  - Handled class imbalance with resampling techniques  
+- **Modeling:**  
+  - Trained and evaluated models such as Logistic Regression, Random Forest, and XGBoost  
+  - Compared accuracy, precision, recall, and F1-score  
+- **Insights:**  
+  - Identified major churn drivers like **tenure, contract type, and monthly charges**  
 
-## 📁 Repository Contents
-- `Ecommerce Sales Dashboard.pbix` → Power BI file (data model, DAX, visuals).  
-- `Orders.csv` → Order metadata.  
-- `Details.csv` → Transactional line-item details.  
-- `Ecommerce Sales Dashboard.pdf` → Exported dashboard snapshot for quick view.  
+#### 📁 Files
+- `Customer_Churn.ipynb` → Jupyter Notebook with full workflow  
 
----
-
-## 🖼️ Preview
-*(Update the path after uploading actual image)*  
-
-![Dashboard Screenshot](https://github.com/youraj145/InLighnX_Internship/blob/main/IMG.png)
-
----
-
-## ⚙️ How to Use
-1. **Prerequisite** → Install [Power BI Desktop](https://powerbi.microsoft.com/desktop/).  
-2. **Download** → Clone this repository or download the files.  
-3. **Open** → Load `Ecommerce Sales Dashboard.pbix` in Power BI Desktop.  
-4. **Explore** → Interact with slicers/filters (Quarter, Month, Payment Mode) to explore business insights.  
+🔗 **[View Project Folder](https://github.com/youraj145/InLighnX_Internship/tree/main/InlighnX_project2)**  
 
 ---
 
@@ -75,4 +75,5 @@ The dashboard tracks the health of the e-commerce business using the following c
 - **Duration**: July 2025 – October 2025  
 
 ---
-✅ *This project demonstrates real-world data analysis using Power BI, transforming raw e-commerce data into actionable insights for decision-makers.*
+
+✅ *Both projects demonstrate practical applications of data analysis and machine learning in solving real-world business problems.*  
