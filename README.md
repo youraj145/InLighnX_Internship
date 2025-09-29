@@ -1,93 +1,78 @@
-📊 E-commerce Sales Performance Dashboard (Data Analyst Internship Project)
-Project Overview
-This Power BI dashboard was developed during my Data Analyst Intern program at InLighnX Global Pvt. Ltd., running from July 2025 to October 2025.
+# 📊 E-commerce Sales Performance Dashboard (Data Analyst Internship Project)
 
-The goal was to transform raw transactional and customer data into an intuitive, interactive dashboard that allows stakeholders (e.g., Sales Managers, Marketing Teams) to monitor key metrics, identify profitable customer segments, and analyze product category performance.
+## Project Overview
+This Power BI dashboard was developed during my **Data Analyst Intern program at InLighnX Global Pvt. Ltd.**, running from **July 2025 to October 2025**.  
 
-Key Performance Indicators (KPIs) Monitored
-The dashboard is built around tracking the health of the e-commerce business through several calculated metrics:
+The goal was to transform raw transactional and customer data into an **intuitive, interactive dashboard** that allows stakeholders (e.g., Sales Managers, Marketing Teams) to:
+- Monitor key business metrics  
+- Identify profitable customer segments  
+- Analyze product category performance  
 
-KPI
+---
 
-Description
+## 🔑 Key Performance Indicators (KPIs) Monitored
+The dashboard tracks the health of the e-commerce business using the following calculated metrics:
 
-Insight Provided
+| **KPI**              | **Description**                                   | **Insight Provided**                                   |
+|-----------------------|---------------------------------------------------|-------------------------------------------------------|
+| **Total Amount**      | Total revenue generated from all orders.          | Overall sales magnitude.                              |
+| **Total Profit**      | Gross profit after subtracting costs.             | Business health and profitability trends.             |
+| **Total Quantity**    | Total number of units sold.                       | Inventory and supply chain demand.                    |
+| **Average Order Value (AOV)** | Total Amount ÷ Total Orders.                | Customer spending behavior & marketing effectiveness. |
 
-Total Amount
+---
 
-Total revenue generated from all orders.
+## 📂 Data Sources and Transformation
 
-Overall sales magnitude.
+### 1. Data Sources
+- **Orders.csv** → Contains high-level order information (Order ID, Order Date, Customer Name, State, City).  
+- **Details.csv** → Contains line-item details (Order ID, Amount, Profit, Quantity, Category, Sub-Category, Payment Mode).  
 
-Total Profit
+### 2. Data Modeling & DAX
+- **One-to-Many Relationship** → Orders (1) ↔ Details (Many) via *Order ID*.  
+- **DAX Calculations** included:  
+  - Time Intelligence: *Year-over-Year Growth*, *Quarterly Trends*  
+  - Custom Measures: *Profit Margin*, *Average Order Value (AOV)*  
 
-Gross profit realized after subtracting costs.
+---
 
-Business health and profitability trends.
+## 📊 Dashboard Insights
 
-Total Quantity
+- **Geographic Performance** → Map visualization showing sales & profit by state (e.g., Maharashtra, Uttar Pradesh as top regions).  
+- **Product Deep Dive** → Category & Sub-Category analysis (e.g., Clothing dominant, Printers high-profit, Saree low-profit).  
+- **Customer Behavior** → Top customers ranked by sales & profit contribution.  
+- **Payment Analysis** → COD vs UPI vs Credit Card sales breakdown.  
+- **Time Series Analysis** → Monthly/Quarterly sales & profit trends for forecasting.  
 
-Total number of units sold.
+---
 
-Inventory and supply chain demand.
+## 📁 Repository Contents
+- `Ecommerce Sales Dashboard.pbix` → Power BI file (data model, DAX, visuals).  
+- `Orders.csv` → Order metadata.  
+- `Details.csv` → Transactional line-item details.  
+- `Ecommerce Sales Dashboard.pdf` → Exported dashboard snapshot for quick view.  
 
-Average Order Value (AOV)
+---
 
-Calculated as Total Amount / Total Orders.
+## 🖼️ Preview
+*(Update the path after uploading actual image)*  
 
-Customer spending behavior and marketing effectiveness.
+![Dashboard Screenshot](https://github.com/youraj145/InLighnX_Internship/blob/main/IMG.png)
 
-Data Sources and Transformation
-1. Data Sources
-The dashboard utilizes two primary CSV files:
+---
 
-Orders.csv: Contains high-level order information including Order ID, Order Date, Customer Name, and Geographic Data (State/City).
+## ⚙️ How to Use
+1. **Prerequisite** → Install [Power BI Desktop](https://powerbi.microsoft.com/desktop/).  
+2. **Download** → Clone this repository or download the files.  
+3. **Open** → Load `Ecommerce Sales Dashboard.pbix` in Power BI Desktop.  
+4. **Explore** → Interact with slicers/filters (Quarter, Month, Payment Mode) to explore business insights.  
 
-Details.csv: Contains transactional line-item details, including Order ID, Amount, Profit, Quantity, Category, Sub-Category, and Payment Mode.
+---
 
-2. Data Modeling and DAX
-Data was modeled in Power BI using a one-to-many relationship between the Orders table and the Details table (using Order ID).
+## 📌 Internship Info
+- **Company**: InLighnX Global Pvt. Ltd.  
+- **Role**: Data Analyst Intern  
+- **Duration**: July 2025 – October 2025  
 
-Complex business logic was implemented using DAX (Data Analysis Expressions) to create calculated columns and measures, including:
-
-Time intelligence functions to calculate Year-over-Year Growth and Quarterly Trends.
-
-Custom measures for Profit Margin and Average Order Value (AOV).
-
-Dashboard Insights
-The final dashboard provides critical visualizations that answer core business questions:
-
-Geographic Performance: Map visualization of sales and profit distribution by State, highlighting top-performing regions (Maharashtra, Uttar Pradesh, etc.).
-
-Product Deep Dive: Donut/Pie charts and bar charts showing the breakdown of quantity and profit by Category (e.g., Clothing being the dominant category) and Sub-Category (e.g., identifying high-profit items like Printers or low-profit areas like Saree).
-
-Customer Behavior: Analysis of top customers by spending and profit generated.
-
-Payment Analysis: Breakdown of sales by Payment Mode (e.g., COD vs. UPI vs. Credit Card) to inform payment gateway strategy.
-
-Time Series Analysis: Line and area charts to track monthly profit and sales trends over the year, crucial for forecasting and budget planning.
-
-Repository Contents
-Ecommerce Sales Dashboard.pbix: The main Power BI file containing the data model, DAX calculations, and visual design.
-
-Orders.csv: Raw data file containing order metadata.
-
-Details.csv: Raw data file containing line-item details.
-
-Ecommerce Sales Dashboard.pdf: A PDF export of the final dashboard view for quick reference.
-
-Preview
-(Note: Replace the placeholder below with the actual image URL from your GitHub repository after you push the files, or with a linked image if you host it elsewhere.)
-
-![Dashboard Screenshot Placeholder](https://github.com/youraj145/InLighnX_Internship/blob/main/IMG.png)
-
-
-
-How to Use
-Prerequisites: Ensure you have Power BI Desktop installed.
-
-Download: Clone this repository or download the files.
-
-Open: Open the Ecommerce Sales Dashboard.pbix file in Power BI Desktop.
-
-Explore: Interact with the filters (e.g., Quarter, Month) and slicers to dynamically change the data and explore different segments.
+---
+✅ *This project demonstrates real-world data analysis using Power BI, transforming raw e-commerce data into actionable insights for decision-makers.*
